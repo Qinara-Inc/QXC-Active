@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qxc-active"
+dynamic = ["version"]
+description = "ACTIVE: observable-aware quantum circuit reduction with certified error bounds."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Swapnil Deshmukh", email = "s.deshmukh@qinara.co.uk" },
+    { name = "Qinara" },
+]
+dependencies = [
+    "numpy>=1.26,<3",
+    "openqasm3[parser]>=1.0,<2",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8,<10",
+    "hypothesis>=6.100,<7",
+]
+bench = [
+    "qiskit>=1.2,<3",
+    "qiskit-qasm3-import",
+]
+
+[project.urls]
+Homepage = "https://www.qinara.co.uk"
+Repository = "TODO(qinara): repository URL"
+
+[project.scripts]
+active = "qxc_active.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = { attr = "qxc_active.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

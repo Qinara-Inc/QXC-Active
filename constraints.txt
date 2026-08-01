@@ -1,0 +1,18 @@
+# Pinned versions for development and CI.
+#   pip install -e .[test] -c constraints.txt
+#
+# Dependency ranges are declared in pyproject.toml. Regenerate with:
+#   pip freeze --exclude-editable > constraints.txt
+ 
+numpy==2.4.4
+openqasm3==1.0.1
+antlr4-python3-runtime==4.13.2
+ 
+pytest==9.1.1
+hypothesis==6.163.0
+colorama==0.4.6
+iniconfig==2.3.0
+packaging==26.0
+pluggy==1.6.0
+pygments==2.20.0
+sortedcontainers==2.4.0

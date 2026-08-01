@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite it using the metadata from this file.
+title: "ACTIVE: observable-aware quantum circuit reduction with certified error bounds"
+type: software
+version: 0.3.0
+date-released: "2026-08-03"
+license: MIT
+abstract: >-
+  ACTIVE is a primitive of the QXC platform, developed by Qinara. It reduces a
+  quantum circuit to only what affects the measured observables — exactly by
+  default, or under a proven per-observable error bound.
+authors:
+  - given-names: Swapnil
+    family-names: Deshmukh
+    email: s.deshmukh@qinara.co.uk
+    affiliation: Qinara
+  - name: Qinara
+# TODO(qinara): replace with the real repository URL before release.
+repository-code: "TODO(qinara): repository URL"
+# TODO(qinara): replace with the real homepage URL before release.
+url: "https://www.qinara.co.uk"
+keywords:
+  - quantum-computing
+  - quantum-circuits
+  - circuit-optimization
+  - observables
+  - OpenQASM
