@@ -17,8 +17,7 @@ authors:
     affiliation: Qinara
   - name: Qinara
 # TODO(qinara): replace with the real repository URL before release.
-repository-code: "TODO(qinara): repository URL"
-# TODO(qinara): replace with the real homepage URL before release.
+repository-code: "https://github.com/Qinara-Inc/QXC-Active"
 url: "https://www.qinara.co.uk"
 keywords:
   - quantum-computing

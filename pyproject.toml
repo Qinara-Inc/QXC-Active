@@ -31,7 +31,7 @@ bench = [
 
 [project.urls]
 Homepage = "https://www.qinara.co.uk"
-Repository = "TODO(qinara): repository URL"
+Repository = "https://github.com/Qinara-Inc/QXC-Active"
 
 [project.scripts]
 active = "qxc_active.cli:main"
